@@ -16,11 +16,14 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for(i = 1; i <= destination; i++){
+        sum += i;
+    }
     return sum
 }
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+ assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -39,6 +42,11 @@ function countEvenNumbersWithin(destination) {
     let count = 0;
     let arrayOfEvenNumbers = [];
 
+    for (let i = 2; i <= destination; i += 2){
+        arrayOfEvenNumbers.push(i)
+        count++;
+        sum += i;
+    }
     return {
         // property value shorthand
         // when the property name and the value name are the same
@@ -49,7 +57,7 @@ function countEvenNumbersWithin(destination) {
     };
 }
 
-// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
